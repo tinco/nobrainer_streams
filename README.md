@@ -1,8 +1,11 @@
 # NobrainerStreams
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nobrainer_streams`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem (hopefully) is temporary, pending these two pull requests:
 
-TODO: Delete this and the text above, and describe your gem
+[rethinkdb#5973](https://github.com/rethinkdb/rethinkdb/pull/5973)
+[nobrainer#192](https://github.com/nviennot/nobrainer/pull/192)
+
+If they are merged I will disable this gem.
 
 ## Installation
 
@@ -19,10 +22,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install nobrainer_streams
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
