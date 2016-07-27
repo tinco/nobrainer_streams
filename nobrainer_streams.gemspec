@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "nobrainer_streams"
   spec.version       = NobrainerStreams::VERSION
   spec.authors       = ["Tinco Andringa"]
-  spec.email         = ["mail@tinco.nl"]
+  spec.email         = ["tinco@phusion.nl"]
 
   spec.summary       = %q{Temporary gem to add streams support to NoBrainer.}
   spec.homepage      = "https://github.com/phusion/nobrainer_streams"
@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
-  spec.add_dependency "", "~> 3.0"
+  spec.add_dependency "rethinkdb", "~> 2.3"
 end
