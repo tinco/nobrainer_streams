@@ -28,9 +28,18 @@ module NoBrainer::Streams
       transmit changes, via: "streamed from #{query.inspect}"
     end
 
+    deserialize = -> (changes) do
+      klass = query.model
+      old_val = changes['old_val']
+      new_val = changes['new_val']
+      changes['old_val'] = klass.new(old_val)  if old_val
+      changes['new_val'] = klass.new(new_val)  if new_val
+      callback.call(changes)
+    end
+
     # defer_subscription_confirmation!
     connection = NoBrainer::Streams::streams_connection
-    cursor = query.to_rql.changes(options).async_run(connection, ConcurrentAsyncHandler, &callback)
+    cursor = query.to_rql.changes(options).async_run(connection, ConcurrentAsyncHandler, &deserialize)
     nobrainer_cursors << cursor
   end
 
