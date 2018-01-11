@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tinco@phusion.nl"]
 
   spec.summary       = %q{Temporary gem to add streams support to NoBrainer.}
-  spec.homepage      = "https://github.com/phusion/nobrainer_streams"
+  spec.homepage      = "https://github.com/tinco/nobrainer_streams"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
