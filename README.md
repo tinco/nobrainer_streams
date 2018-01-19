@@ -1,3 +1,5 @@
+# Warning: This gem monkeypatches other gems in an unsupported way, use at your own risk
+
 # NobrainerStreams
 
 This gem (hopefully) is temporary, pending these two pull requests:
